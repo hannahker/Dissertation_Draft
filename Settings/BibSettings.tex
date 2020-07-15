@@ -1,0 +1,23 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Package for the bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[style=authoryear,backend=biber, isbn=false,url=false,eprint=false]{biblatex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%Formatting options
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\DeclareFieldFormat[article]{volume}{\mkbibbold{#1}}
+
+\DeclareFieldFormat*{title}{#1}
+
+\renewbibmacro{in:}{}
+
+\AtEveryBibitem{%
+  \clearfield{note}%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Name of the .bib files with all the references
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addbibresource{references.bib}
+
