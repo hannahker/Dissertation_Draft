@@ -17,9 +17,19 @@ The scope of this work is limited to three distinct case studies. We focus on hu
 The details for each of these case studies is described below. 
 
 
-
 \section{Data description}
 
+The data for this analysis was collected from OSM history extract files. While OSM is most often consumed as a user-facing map, it primarily functions as a geospatial database. The OSM data model uses nodes, ways, and relations to represent the geometry of all geographic entities \parencite{noauthor_elements_nodate}. Nodes commonly represent point features, such as shops, healthcare facilities, and bus stops. Ways are ordered collections of nodes, commonly used to represent features such as roads. Closed ways (where the start and end node are the same) are used to represent areal features, such as buildings. Relations are the least common element, used to represent relationships between multiple data elements. Relations can take many forms, but may, for example, be used describe turn restrictions between road sections \parencite{noauthor_elements_nodate}. 
+
+The attributes for all OSM elements are stored using tags, which consist of text key, value pairs. An element can have multiple tags, however each key for a single elements must be unique. While OSM does not impose any restrictions on the contents of a tag (aside from being a 255-character Unicode string), it is a best-practice within the community to follow established tagging conventions for commonly occurring elements. For example, the \texttt{highway=residential} tag is used to describe roads that provide access to homes \parencite{noauthor_elements_nodate}. The Taginfo website \footnote{\url{https://taginfo.openstreetmap.org/}} allows one to see commonly used tags across the world. Each OSM element also contains metadata such as the timestamp of last edit, version number, and user ID of the contributor \parencite{noauthor_elements_nodate}. 
+
+Still to address
+\begin{itemize}
+    \item OSM XML data format
+    \item Common ways for processing OSM extracts
+    \item Presence of historical data and challenges with processing large historical data
+    \item Mapswipe data
+\end{itemize}
 
 
     
