@@ -247,7 +247,8 @@
 \emergencystretch = 10\p@
 \vfuzz = 2\p@
 \hfuzz = 2\p@
-\flushbottom
+% \flushbottom
+\raggedbottom
 %    \end{macrocode}
 %  "Double or one-and-a-half spacing should be used in typescripts, except for indented 
 %   quotations or footnotes where single spacing may be used."
