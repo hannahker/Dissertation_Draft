@@ -33,7 +33,7 @@
 
 % The setspace package lets you use 1.5-sized or double line spacing.
 \usepackage{setspace}
-\setstretch{2}
+\setstretch{1.5}
 
 % That just does body text -- if you want to expand *everything*,
 %  including footnotes and tables, use this instead:
@@ -167,3 +167,10 @@
 \usepackage{booktabs}
 \usepackage{amsmath}
 \usepackage{breqn}
+\usepackage{colortbl}
+
+\usepackage{xcolor}
+\newlength\MAX  \setlength\MAX{5mm}
+\newcommand*\Chart[1]{#1~\rlap{\textcolor{black!20}{\rule{\MAX}{2ex}}}\rule{#1\MAX}{2ex}}
+
+\usepackage{multirow}
