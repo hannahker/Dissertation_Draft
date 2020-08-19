@@ -1,23 +1,27 @@
 \chapter{Introduction}
 \label{chapterlabel1}
 
-\section{Project context and justification}
+Accurate and up-to-date geospatial data is an important resource that enables an effective response to a humanitarian crisis \parencite{cowan_geospatial_2011, poser_volunteered_2010, soden_infrastructure_2016, zook_volunteered_2010}. Such data can be critical for functions such as distributing aid, identifying affected regions, and coordinating response between humanitarian organizations \parencite{soden_infrastructure_2016}. However, as many regions with humanitarian need do not have official or authoritative geospatial data, alternative sources of crowdsourced data are often needed \parencite{zook_volunteered_2010}. 
 
-\textit{What is OSM and why is it useful in a humanitarian context? Why is data maintenance an important topic to consider with respect to humanitarian mapping? How will the outcomes of this work be relevant and useful?}
+OpenStreetMap (OSM) is a valuable source of open and freely available geospatial data that is often used in humanitarian operations \parencite{palen_success_2015, soden_infrastructure_2016}. However, as OSM is an example of what \textcite{goodchild_citizens_2007} terms “volunteered geographic information”, it does not have any formal mechanisms for quality control and so may be considered less trustworthy by data users. 
 
-\section{Scope of work}
+There is a wealth of past work that has investigated questions of data quality in OSM. These efforts often consider dimensions of data quality such as completeness and positional accuracy \parencite{girres_quality_2010, haklay_how_2010}. Data quality has been evaluated through comparison with external, authoritative geospatial data \parencite{girres_quality_2010, haklay_how_2010, zielstra_comparative_2010}, and through various internal metrics such as the volume of contributors in a given region \parencite{haklay_how_2010-1}. The majority of this past work has highlighted the variability of OSM data quality, particularly between urban and rural locations \parencite{zielstra_comparative_2010}. 
 
-\textit{Outline case study approach. This is an initial exploratory study. We will be offering recommendations, but will not be making broad generalizations aout phenomena.}
+We further this body of past work by focusing more closely on temporal dimensions of data quality in OSM. Situated within the humanitarian context, we respond to the need to consider the temporality that is inherent to geospatial data production in OSM. Just as real-world geographic features and their associated attributes change over time, so must their digital representations within OSM. This framing highlights the need to develop stronger understandings of temporal data quality (ie. the data’s ‘up-to-dateness’) within this complex database. We explore the concept of temporal data quality by investigating practices of data maintenance, which we consider to be the necessary process by which data is kept up-to-date. 
 
-\section{Research question and objectives}
+Data maintenance is particularly relevant in humanitarian mapping contexts due to the unique modes of data production in this domain. The response effort following the 2015 Kathmandu earthquake demonstrates how event-based humanitarian mapping campaigns have been able to quickly produce large volumes of up-to-date geospatial data that is critical to the work of first responders \parencite{soden_infrastructure_2016}. However, much of this data is produced by remote volunteers \parencite{eckle_quality_2015} who may be less likely to be invested in the quality of the data over time. This largely remote nature of contribution coupled with the large volume of data may mean that the OSM data produced during humanitarian mapping campaigns is at a risk of quickly becoming out of date. While one cannot deny the value of this data in the wake of a crisis, the humanitarian mapping community also acknowledges the importance of longer-term sustainability of this data and its value as a community resource \parencite{soden_crowdsourced_2014}. 
 
-In this work we explore the following research question: \textit{What are the characteristics of data production during selected humanitarian mapping campaigns and to what extent is this data maintained after the end of each campaign?}
+In this research we aim to explore the characteristics of geospatial data production during selected humanitarian mapping campaigns in OSM, and the extent to which this data is maintained following each campaign. We hope that the results of our analysis will contribute to a greater understanding of the quality of data that is produced in humanitarian mapping efforts, particularly relating to the data’s ongoing temporal accuracy. We employ a comparative case study approach whereby we investigate four selected humanitarian mapping campaigns and one reference period of mapping activity in a region of known high data quality. We intend for the results of this analysis to provide a foundation for future work in this emerging research domain. 
 
-To address this question, we will pursue the following research objectives: 
+Our work explores the following specific research questions: 
 
-\textit{How can we identify data maintenance following humanitarian mapping, and what factors relating to the dynamics of data production are related to greater data maintenance?}
+\begin{itemize}
+    \item What are the characteristics of data production in our selected humanitarian mapping campaigns and how does this compare with our reference case study?
+    \item To what extent is the data produced during our selected campaigns maintained over time and how does this compare with our reference case study? 
+    \item Do our results offer any insight into potential relationships between characteristics of data production and prevalence of data maintenance in each of our case studies? 
+\end{itemize}
 
-\section{Research outline}
+\section{Document outline}
 
-\textit{Signposting paragraphs to broadly outline each of the chapters. What will be discussed in each chapter?}
+The contents of this research document are laid out at follows: In \textbf{Chapter 2}, we review existing academic literature relating to OSM data quality, focusing closely on past work relating to temporal data quality and the evolution of OSM data over time. We also look at literature relating to geospatial data needs in humanitarian contexts and the applications of OSM in this domain. We critically examine this past literature to identify a key research gap that our work addresses. In \textbf{Chapter 3}, we provide a brief description of the OSM data model and outline relevant computational challenges in processing historical OSM data. We highlight the OSHDB framework \parencite{raifer_oshdb_2019} as the state-of-the-art in managing this data. We outline our methodology in \textbf{Chapter 4}, describing our case study approach, techniques in data collection and processing, and procedures for investigating data production and maintenance. We present the results of this analysis in \textbf{Chapter 5} and discuss their significance and limitations in \textbf{Chapter 6}. We conclude this work in \textbf{Chapter 7} and provide recommendations for future research efforts. 
 
