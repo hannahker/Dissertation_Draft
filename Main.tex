@@ -129,6 +129,19 @@
 \addcontentsline{toc}{chapter}{Bibliography}
 \printbibliography
 
+
+% https://tex.stackexchange.com/questions/213523/remove-appendix-tables-and-figures-from-list-of-figure-tables
+\let\svaddcontentsline\addcontentsline
+\renewcommand\addcontentsline[3]{%
+  \edef\qtest{#1}%
+  \def\qmatch{lof}%
+  \ifx\qmatch\qtest\else%
+    \def\qmatch{lot}%
+    \ifx\qmatch\qtest\else%
+      \svaddcontentsline{#1}{#2}{#3}%
+  \fi\fi%
+}
+
 \include{Ending/Appendix}
 
 % All done. \o/
