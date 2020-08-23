@@ -447,8 +447,9 @@
     \end{center}%
     \vfill%
     \begin{center}%
-    This dissertation is submitted in part requirement for the \\ 
-    MSc in the Centre for Advanced Spatial Analysis, \\
+    This dissertation is submitted in partial fulfillment \\ 
+    of the requirements for the degree of MSc \\
+    in the Centre for Advanced Spatial Analysis, \\
     Bartlett Faculty of the Built Environment, UCL \\
     
     \end{center}%
@@ -459,6 +460,8 @@
     \@date \\
     Supervised by \@supervisor 
     \end{center}%
+    
+    
     \if@twoside %
       \newpage%
       ~\\
