@@ -447,17 +447,10 @@
     \end{center}%
     \vfill%
     \begin{center}%
-    A dissertation submitted in partial fulfillment \\
-    of the requirements for the degree of \\
-    \textbf{\@degree@string} \\
-    of \\
-    \textbf{University College London}.
-    \end{center}%
-    \vspace{2em}%
-    \begin{center}%
-    \@department \\
-    \@faculty \\
-    UCL\\
+    This dissertation is submitted in part requirement for the \\ 
+    MSc in the Centre for Advanced Spatial Analysis, \\
+    Bartlett Faculty of the Built Environment, UCL \\
+    
     \end{center}%
     \vspace{2em}%
     \begin{center}%
